@@ -14,7 +14,7 @@
     height: 50%;
     width: 60%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.305);
+    /* background-color: rgba(0, 0, 0, 0.305); */
     flex-direction: column;
     justify-content: center;
 }
