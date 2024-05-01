@@ -5,9 +5,9 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    font-family: "loos-normal", sans-serif;
+    font-family: "orbital", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-weight: 100;
 }
 
 .navigation-content-container {
