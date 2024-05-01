@@ -1,0 +1,67 @@
+.landing-page-container {
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/public/images/landing.jpg");
+    background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.landing-page-text-container {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.305);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-page-title {
+    width: 100%;
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.landing-page-desc {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.text-gradient {
+    background-image: linear-gradient(to bottom right, #e0b540, rgb(255, 162, 0));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .landing-page-desc {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-page-title {
+        font-size: 3rem;
+    }
+
+    .landing-page-desc {
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 1rem;
+    }
+}

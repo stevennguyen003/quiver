@@ -1,0 +1,202 @@
+.flight-search-container {
+    height: 50%;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-type-container {
+    height: 15%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trip-type-container span {
+    color: white;
+    font-size: 1.0rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.selected-trip {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.location-search-container {
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.from-search-container {
+    height: 100%;
+    width: 50%;
+    margin-right: 3%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 50, 50, 0.50);
+    color: white;
+}
+
+.to-search-container {
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 50, 50, 0.50);
+    color: white;
+}
+
+#flight-search-from {
+    flex-grow: 1;
+    margin-left: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+::placeholder {
+    color: white;
+}
+
+#flight-search-to {
+    flex-grow: 1;
+    margin-left: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.collapse-flex-container {
+    height: 12%;
+}
+
+.collapse-one-way {
+    display: flex;
+}
+
+.date-search-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgb(50, 50, 50, 0.50);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.data-search-one-way {
+    width: 50%;
+    margin-right: 3%;
+}
+
+.vertical-divider {
+    height: 75%;
+    width: 0.5px;
+    background-color: rgba(90, 90, 90, 0.75);
+}
+
+.depart-flight-container {
+    width: 50%;
+    padding: 10px;
+}
+
+.return-flight-container {
+    width: 50%;
+    padding: 10px;
+}
+
+#depart-flight-date {
+    flex-grow: 1;
+    margin-left: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+#return-flight-date {
+    flex-grow: 1;
+    margin-left: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.ticket-type-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgba(50, 50, 50, 0.50);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.ticket-type-collapse-button {
+    margin-left: 1%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    border: none !important;
+    background-color: rgb(255, 162, 0) !important;
+    color: white !important;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.btn-one-way {
+    margin-top: 10px !important;
+}
+
+
+
+

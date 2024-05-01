@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import { HashRouter } from "react-router-dom";
+import { Routes, Route } from "react-router";
+import Navigation from './Components/Navigation';
+import LandingPage from './Pages/LandingPage';
+import FlightPage from "./Pages/FlightPage";
+import Dashboard from "./Pages/Dashboard";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-container">
+      <HashRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Stays" element={<h1>Stays</h1>} />
+          <Route path="/Flights" element={<FlightPage />} />
+          <Route path="/Settings" element={<h1>Settings</h1>} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
