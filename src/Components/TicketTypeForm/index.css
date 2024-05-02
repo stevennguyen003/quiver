@@ -1,0 +1,55 @@
+.ticket-type-form-container {
+    height: 200px;
+    width: 75%;
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 0.75);
+    position: absolute;
+    margin-top: 245px;
+}
+
+#cabin-class-select {
+    background-color: #d3d3d300;
+    color: white;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    margin-bottom: 3%;
+}
+
+option {
+    color: black;
+}
+
+label {
+    color: white;
+    margin-bottom: 1%;
+}
+
+.type-container {
+    width: 100%;
+    color: white;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.type-container p {
+    margin: 0;
+}
+
+.one-way {
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .ticket-type-form-container {
+        margin-top: 245px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ticket-type-form-container {
+        height: 175px;
+        margin-top: 220px;
+    }
+}

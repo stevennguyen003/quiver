@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+form {
+    height: 100%;
+}
+
 .trip-type-container {
     height: 15%;
     width: 80%;
@@ -163,6 +167,7 @@ input:focus, input.form-control:focus {
 .ticket-type-container {
     height: 100%;
     width: 100%;
+    position: relative;
     margin-top: 5px;
     background-color: rgba(50, 50, 50, 0.50);
     color: white;

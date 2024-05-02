@@ -1,17 +1,12 @@
 import "./index.css"
+import { useState } from "react";
 import FlightForm from "../../Components/FlightForm";
+import TicketTypeForm from "../../Components/TicketTypeForm";
 function FlightPage() {
+    const [ticketCollapsed, setTicketCollapsed] = useState(true);
     return (
         <div className="flight-page-container">
-            <div className="header-container">
-                <span>Where</span>
-                <span>Do</span>
-                <span>You</span>
-                <span>Want</span>
-                <span>To</span>
-                <span>Go?</span>
-            </div>
-            <FlightForm />
+            <FlightForm ticketCollapsed={ticketCollapsed} setTicketCollapsed={setTicketCollapsed}/>
         </div>
     );
 }
