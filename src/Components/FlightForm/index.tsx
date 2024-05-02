@@ -31,7 +31,7 @@ function FlightForm() {
                         <input type="date" id="return-flight-date" />
                     </div>
                 </div>
-                <div className="ticket-type-container">
+                <div className={`ticket-type-container ${tripType === "One-Way" ? "ticket-type-one-way" : ""}`}>
                     {collapsed ? <FaChevronUp /> : <FaChevronDown />}
                     <button onClick={() => setCollapsed(!collapsed)} className="ticket-type-collapse-button">Test</button>
                 </div>

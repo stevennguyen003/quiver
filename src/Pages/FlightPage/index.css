@@ -11,17 +11,34 @@
 
 .header-container {
     height: 25%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header-container span {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 2.5rem;
     font-family: "orbital", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: rgba(255, 255, 255, 0.15);
+}
+
+@media screen and (max-width: 1200px) {
+    .header-container span {
+        font-size: 2rem;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container span {
+        font-size: 1.5rem;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }

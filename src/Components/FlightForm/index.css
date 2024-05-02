@@ -1,6 +1,6 @@
 .flight-search-container {
     height: 50%;
-    width: 35%;
+    width: 45%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@
 
 .location-search-container {
     height: 12%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,9 +40,9 @@
 .from-search-container {
     height: 100%;
     width: 50%;
-    margin-right: 3%;
+    margin-right: 1%;
     border-radius: 10px;
-    padding: 10px;
+    padding-left: 3%;
     display: flex;
     align-items: center;
     background-color: rgb(50, 50, 50, 0.50);
@@ -52,7 +53,7 @@
     height: 100%;
     width: 50%;
     border-radius: 10px;
-    padding: 10px;
+    padding-left: 3%;
     display: flex;
     align-items: center;
     background-color: rgb(50, 50, 50, 0.50);
@@ -60,11 +61,11 @@
 }
 
 #flight-search-from {
-    flex-grow: 1;
-    margin-left: 5%;
+    width: 90%;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
+    padding-left: 3%;
     font-family: "loos-normal", sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -75,11 +76,11 @@
 }
 
 #flight-search-to {
-    flex-grow: 1;
-    margin-left: 5%;
+    width: 90%;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
+    padding-left: 3%;
     font-family: "loos-normal", sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -117,7 +118,7 @@ input:focus, input.form-control:focus {
 
 .data-search-one-way {
     width: 50%;
-    margin-right: 3%;
+    margin-right: 1%;
 }
 
 .vertical-divider {
@@ -128,15 +129,16 @@ input:focus, input.form-control:focus {
 
 .depart-flight-container {
     width: 50%;
-    padding: 10px;
+    padding: 5%;
 }
 
 .return-flight-container {
     width: 50%;
-    padding: 10px;
+    padding: 5%;
 }
 
 #depart-flight-date {
+    /* width: 225%; */
     flex-grow: 1;
     margin-left: 5%;
     border: none;
@@ -197,6 +199,30 @@ input:focus, input.form-control:focus {
     margin-top: 10px !important;
 }
 
+@media screen and (max-width: 1200px) {
+    .flight-search-container {
+        height: 50%;
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .flight-search-container {
+        height: 50%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flight-search-container {
+        height: 50%;
+        width: 75%;
+    }
+
+    .ticket-type-one-way {
+        width: 75%;
+    }
+}
 
 
 
