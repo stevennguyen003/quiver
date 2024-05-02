@@ -12,8 +12,8 @@ function TicketTypeForm({ tripType, cabinClass, setCabinClass }: { tripType: str
     return (
         <div className={`ticket-type-form-container ${tripType !== "One-Way" ? "one-way" : ""}`}>
             <label htmlFor="cabin-class-select"><b>Cabin Class</b></label>
-            <select value={cabinClass} onChange={(e) => setCabinClass(e.target.value as CabinClasses)} id="cabin-class-select" className="form-select" aria-label="Default select example">
-                <option value={CabinClasses.Economy} selected>Economy</option>
+            <select value={cabinClass} defaultValue={CabinClasses.Economy} onChange={(e) => setCabinClass(e.target.value as CabinClasses)} id="cabin-class-select" className="form-select" aria-label="Default select example">
+                <option value={CabinClasses.Economy}>Economy</option>
                 <option value={CabinClasses.PremiumEconomy}>Premium Economy</option>
                 <option value={CabinClasses.BusinessClass}>Business Class</option>
                 <option value={CabinClasses.FirstClass}>First Class</option>

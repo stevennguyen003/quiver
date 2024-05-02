@@ -1,6 +1,7 @@
 import "./index.css";
 import { FaLocationArrow, FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { useState } from "react";
+import * as client from "./client";
 import TicketTypeForm from "../TicketTypeForm";
 
 enum CabinClasses {
@@ -17,6 +18,11 @@ function FlightForm({ ticketCollapsed, setTicketCollapsed }: { ticketCollapsed: 
     const [departDate, setDepartDate] = useState('');
     const [returnDate, setReturnDate] = useState('');
     const [cabinClass, setCabinClass] = useState(CabinClasses.Economy);
+
+    const searchAirport = async () =>  {
+        const response = await client.getAirports(startAiport);
+    }
+
     return (
         <>
             <div className="flight-search-container">
@@ -28,11 +34,11 @@ function FlightForm({ ticketCollapsed, setTicketCollapsed }: { ticketCollapsed: 
                     <div className="location-search-container">
                         <div className="from-search-container">
                             <FaLocationArrow />
-                            <input type="text" id="flight-search-from" placeholder="From" />
+                            <input type="text" value={startAiport} onChange={(e) => setStartAirport(e.target.value)} id="flight-search-from" placeholder="From" />
                         </div>
                         <div className="to-search-container">
                             <FaLocationArrow />
-                            <input type="text" id="flight-search-to" placeholder="To" />
+                            <input type="text" value={destAirport} onChange={(e) => setDestAirport(e.target.value)} id="flight-search-to" placeholder="To" />
                         </div>
                     </div>
                     <div className={`collapse-flex-container ${tripType === "One-Way" ? "collapse-one-way" : ""}`}>
@@ -51,7 +57,7 @@ function FlightForm({ ticketCollapsed, setTicketCollapsed }: { ticketCollapsed: 
                             {!ticketCollapsed && <TicketTypeForm tripType={tripType} cabinClass={cabinClass} setCabinClass={setCabinClass} />}
                         </div>
                     </div>
-                    <button className={`btn btn-primary ${tripType === "One-Way" ? "btn-one-way" : ""}`}>Find Flights</button>
+                    <button onClick={() => searchAirport()}className={`btn btn-primary ${tripType === "One-Way" ? "btn-one-way" : ""}`}>Find Flights</button>
                 </form>
             </div>
         </>
