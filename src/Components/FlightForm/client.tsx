@@ -5,7 +5,6 @@ export const getAirports = async (query: string) => {
     try {
         const url = `${BACKEND_URL}/api/airports/${query.toLowerCase()}`;
         const response = await axios.get(url);
-        console.log(response.data.data);
         return response.data; // Return the JSON data from the response
     } catch (error) {
         console.error("Error fetching airports:", error);
